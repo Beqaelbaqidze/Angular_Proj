@@ -1,0 +1,62 @@
+.headerContainer {
+    
+    padding: 12px 40px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pages a {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 32px;
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.pages a:hover {
+    color: #ccc; /* Hover color */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.profile h1 {
+    cursor: pointer;
+}
+
+.profileInfo {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    background-color: #333; /* Dark background color */
+    padding: 24px 40px; /* Add padding for better spacing */
+}
+
+.profileInfo h3 {
+    margin-top: 20px;
+    cursor: pointer;
+}
+.pages a.active {
+    color: rgb(137, 227, 227);
+    font-weight: bold; 
+
+}
+
+
+

@@ -1,0 +1,18 @@
+<div class="headerContainer">
+    <img src="" alt="Logo">
+    <div class="pages">
+        <a [routerLink]="['/home']" [class.active]="isActive('/home')">home</a>
+        <a [routerLink]="['/store']" [class.active]="isActive('/store')">store</a>
+        <a [routerLink]="['/details']" [class.active]="isActive('/details')">details</a>
+        <a [routerLink]="['/contact-us']" [class.active]="isActive('/contact-us')">contact us</a>
+    </div>
+    
+    <div class="profile">
+        <h1 (click)="onhide()">Profile</h1>
+        <div *ngIf="isProfileOptionsVisible" class="profileInfo">
+            <h3>Profile</h3>
+            <h3>Settings</h3>
+            <h3>Logout</h3>
+        </div>
+    </div>
+</div>
